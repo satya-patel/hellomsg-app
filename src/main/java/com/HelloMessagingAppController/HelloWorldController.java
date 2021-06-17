@@ -13,3 +13,8 @@ public class HelloWorldController {
         return "Hello from Bridgelabz";
     }
 }
+    @RequestMapping(value = {"/query"}, method = RequestMethod.GET)
+    public String hello(@RequestParam(value = "name") String name){
+        return "Hello " + name + " !!";
+    }
+}
